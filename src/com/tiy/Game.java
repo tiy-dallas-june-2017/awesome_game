@@ -1,10 +1,10 @@
 package com.tiy;
 
 public class Game {
-    //Player 1
+    //GenericPlayer 1
     private Player player1;
 
-    //Player 2
+    //GenericPlayer 2
     private Player player2;
 
     public Game(Player player1, Player player2) {
@@ -23,7 +23,7 @@ public class Game {
         while(player1.getHealthPoints() > 0 && player2.getHealthPoints() > 0){
             //Get the damage player 1 will deal to player 2.
             Integer damageDealt = sixSidedDie.roll();
-            //Print out the fact that Player 1 is dealing that damage to player 2.
+            //Print out the fact that GenericPlayer 1 is dealing that damage to player 2.
             System.out.println(player1.getName() + " has caused " + player2.getName() + " " + damageDealt + " points of damage.");
             //Hit player 2
             player2.hit(damageDealt);
